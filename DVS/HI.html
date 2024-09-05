@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Grid</title>
+  <style>
+    .dh-image-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dh-image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8rem;
+    }
+
+    .dh-image-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .dh-scroll-btn {
+      display: none; /* Hide arrows by default */
+    }
+
+    @media (max-width: 768px) {
+      .dh-scroll-btn {
+        display: block; /* Show arrows only on mobile */
+      }
+
+      .dh-image-grid {
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        gap: 10px;
+      }
+
+      .dh-image-item {
+        min-width: 80%;
+        flex-shrink: 0;
+      }
+
+      .dh-scroll-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .dh-left-btn {
+        left: 10px;
+      }
+
+      .dh-right-btn {
+        right: 10px;
+      }
+
+      .dh-scroll-btn:focus {
+        outline: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dh-image-container">
+    <button class="dh-scroll-btn dh-left-btn">&#10094;</button> <!-- Left Arrow -->
+    <div class="dh-image-grid">
+      <div class="dh-image-item"><img src="https://decorhouse.in/wp-content/uploads/2024/08/Banner__1.png" alt="Image 1"></div>
+      <div class="dh-image-item"><img src="https://decorhouse.in/wp-content/uploads/2024/08/Banner__2.png" alt="Image 2"></div>
+      <div class="dh-image-item"><img src="https://decorhouse.in/wp-content/uploads/2024/08/Banner__3.png" alt="Image 3"></div>
+      <div class="dh-image-item"><img src="https://decorhouse.in/wp-content/uploads/2024/08/Banner__1.png" alt="Image 4"></div>
+      <div class="dh-image-item"><img src="https://decorhouse.in/wp-content/uploads/2024/08/Banner__2.png" alt="Image 5"></div>
+      <div class="dh-image-item"><img src="https://decorhouse.in/wp-content/uploads/2024/08/Banner__3.png" alt="Image 6"></div>
+      <div class="dh-image-item"><img src="https://decorhouse.in/wp-content/uploads/2024/08/Banner__1.png" alt="Image 7"></div>
+      <div class="dh-image-item"><img src="https://decorhouse.in/wp-content/uploads/2024/08/Banner__2.png" alt="Image 8"></div>
+      <div class="dh-image-item"><img src="https://decorhouse.in/wp-content/uploads/2024/08/Banner__3.png" alt="Image 9"></div>
+    </div>
+    <button class="dh-scroll-btn dh-right-btn">&#10095;</button> <!-- Right Arrow -->
+  </div>
+
+  <script>
+    const leftBtn = document.querySelector('.dh-left-btn');
+    const rightBtn = document.querySelector('.dh-right-btn');
+    const imageGrid = document.querySelector('.dh-image-grid');
+
+    leftBtn.addEventListener('click', () => {
+      imageGrid.scrollBy({
+        left: -imageGrid.clientWidth,
+        behavior: 'smooth'
+      });
+    });
+
+    rightBtn.addEventListener('click', () => {
+      imageGrid.scrollBy({
+        left: imageGrid.clientWidth,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>

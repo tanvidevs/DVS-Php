@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Dvsmining</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Animation CDNs -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- fit background image and make it Responsive -->
+    <section class="text-center bg-cover bg-center bg-no-repeat relative">
+      <!-- Video Background -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute inset-0 w-full h-screen object-cover"
+      >
+        <source src="bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Overlay to ensure text is visible -->
+      <div class="relative z-10">
+        <!-- Navbar -->
+        <nav
+          class="bg-transparent p-4 mr-0 md:mr-36 ml-0 md:ml-36"
+          data-aos="fade-down"
+        >
+          <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white font-bold text-xl">
+              <img src="./logo.png" class="h-20" alt="" />
+            </div>
+            <ul class="hidden md:flex space-x-6">
+              <li>
+                <a
+                  href="#"
+                  class="text-white hover:bg-orange-600 rounded-2xl py-2 px-3"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white hover:bg-orange-600 rounded-2xl py-2 px-3"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white hover:bg-orange-600 rounded-2xl py-2 px-3"
+                  >Our USP</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white hover:bg-orange-600 rounded-2xl py-2 px-3"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white hover:bg-orange-600 rounded-2xl py-2 px-3"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white bg-orange-600 hover:bg-orange-800 rounded-full py-3 px-4 font-bold"
+                  >Enquire Now</a
+                >
+              </li>
+            </ul>
+            <div class="md:hidden">
+              <button id="menu-toggle" class="text-white focus:outline-none">
+                <svg
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-transparent p-4 md:hidden">
+          <ul class="space-y-4" data-aos="fade-down">
+            <li>
+              <a
+                href="#"
+                class="text-white font-bold hover:bg-orange-600 rounded-2xl py-2 text-center block"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white font-bold hover:bg-orange-600 rounded-2xl py-2 text-center block"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white font-bold hover:bg-orange-600 rounded-2xl py-2 text-center block"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white font-bold hover:bg-orange-600 rounded-2xl py-2 text-center block"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white bg-orange-600 hover:bg-orange-800 rounded-full py-3 px-4 font-bold"
+                >Enquire Now</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="p-2 h-screen">
+          <div class="text-center mt-44 pr-6 md:pr-0  pl-6 md:pl-0">
+            <h1
+              class="text-4xl md:text-7xl font-bold text-white"
+              data-aos="fade-up"
+            >
+              Digging Deeper For Excellence
+            </h1>
+            <p class="mt-4 text-white text-xl md:text-2xl" data-aos="fade-up">
+              Driven by precision, innovative & a commitement to sustainable excellence.
+            </p>
+            <button
+              class="mt-6 px-10 py-3 bg-orange-600 hover:bg-orange-800 text-white text-xl rounded-full shadow-lg"
+              data-aos="fade-up"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="mr-5 md:mr-36 ml-5 md:ml-36">
+      <div class="p-6 rounded-2xl" data-aos="fade-up">
+        <h2
+          class="text-6xl md:text-7xl font-bold mb-1 text-center text-orange-600 mb-4"
+        >
+          About Us
+        </h2>
+        <p class="mb-6 text-center text-xl">
+          Mining Services For Growth and Betterment!
+        </p>
+        <div class="flex flex-col md:flex-row items-center">
+          <img
+            src="bg.png"
+            alt="About Us"
+            class="w-full md:w-1/2 h-auto mb-6 md:mb-0 md:mr-6 rounded-2xl"
+            data-aos="zoom-in"
+          />
+          <p
+            class="text-gray-600 text-lg text-justify md:w-1/2"
+            data-aos="fade-up"
+          >
+            At DVSMining, we are dedicated to sustainable and innovative mining
+            solutions that prioritize both efficiency and environmental
+            responsibility. Our team of experts is committed to pushing the
+            boundaries of the mining industry, delivering top-notch services
+            that meet the evolving needs of our clients. With years of
+            experience and a passion for excellence, we are your trusted partner
+            in mining operations worldwide. DVS Mining is committed to providing
+            end-to-end mining solutions and also creates abiding sustainable
+            value for stakeholders and companies at a global pitch. Our robust
+            portfolio consists of reliable mining management services that
+            include Design, Development, Engineering, Construction and Financial
+            Evaluation of small or large-scale mining projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+        <!-- Client Logos Section -->
+        <section class="mr-5 md:mr-36 ml-5 md:ml-36 py-8 mt-20">
+          <h2
+            class="text-5xl md:text-7xl font-bold mb-1 text-center text-orange-600 mb-4"
+          >
+            Our Clients
+          </h2>
+          <p class="mb-6 text-center text-xl">
+            Trusted by industry leaders worldwide
+          </p>
+          <div
+            class="bg-orange-600 rounded-2xl p-10 flex flex-wrap justify-center gap-4 md:justify-between"
+          >
+            <div class="inline-block px-4 w-full md:w-auto flex justify-center">
+              <img
+                src="./Logo/logo-1.png"
+                alt="Client 1"
+                class="h-24"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="inline-block px-4 w-full md:w-auto flex justify-center">
+              <img
+                src="./Logo/logo-2.png"
+                alt="Client 2"
+                class="h-24"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="inline-block px-4 w-full md:w-auto flex justify-center">
+              <img
+                src="./Logo/logo-3.png"
+                alt="Client 3"
+                class="h-24"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="inline-block px-4 w-full md:w-auto flex justify-center">
+              <img
+                src="./Logo/logo-4.png"
+                alt="Client 4"
+                class="h-24"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="inline-block px-4 w-full md:w-auto flex justify-center">
+              <img
+                src="./Logo/logo-5.png"
+                alt="Client 5"
+                class="h-24"
+                data-aos="fade-up"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose Us -->
+    <div class="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6 mt-20">
+      <div class="text-center mb-10">
+        <h2
+          class="text-5xl md:text-7xl font-bold mb-1 text-center text-orange-600 mb-4"
+        >
+          Why Choose Us
+        </h2>
+        <p class="mb-6 text-center text-xl">
+          Mining Services For Growth and Betterment!
+        </p>
+      </div>
+
+      <div class="flex flex-col md:flex-row">
+        <!-- Text content -->
+        <div class="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">
+          <div class="w-full sm:w-1/2 mb-4 px-2" data-aos="fade-up-right">
+            <div
+              class="h-full py-4 px-6 border border-orange-500 border-t-0 border-l-0 rounded-br-xl" 
+            >
+              <h3 class="text-2xl font-bold text-md mb-6">
+                Expertise & Experience
+              </h3>
+              <p class="text-sm">
+                Over 20 years of industry experience with a proven track record in delivering top-quality mining services.
+              </p>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 mb-4 px-2" data-aos="fade-up-right">
+            <div
+              class="h-full py-4 px-6 border border-orange-500 border-t-0 border-l-0 rounded-br-xl"
+            >
+              <h3 class="text-2xl font-bold text-md mb-6">
+                Advanced Technology
+              </h3>
+              <p class="text-sm">
+                Utilization of cutting-edge technology and equipment for efficient and sustainable mining operations.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full sm:w-1/2 mb-4 px-2" data-aos="fade-up-right">
+            <div
+              class="h-full py-4 px-6 border border-orange-500 border-t-0 border-l-0 rounded-br-xl"
+            >
+              <h3 class="text-2xl font-bold text-md mb-6">
+                Safety Commitment
+              </h3>
+              <p class="text-sm">
+                Unwavering commitment to safety standards, ensuring a secure working environment for all stakeholders.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full sm:w-1/2 mb-4 px-2" data-aos="fade-up-right">
+            <div
+              class="h-full py-4 px-6 border border-orange-500 border-t-0 border-l-0 rounded-br-xl"
+            >
+              <h3 class="text-2xl font-bold text-md mb-6">
+                Customized Solutions
+              </h3>
+              <p class="text-sm">
+                Tailored mining solutions to meet the specific needs of each client, maximizing productivity and profitability.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- end Text content -->
+
+        <!-- Image -->
+        <div class="mt-6 md:mt-0 mr-0 md:ml-8 mb-6 md:mb-0">
+          <img
+            class="w-full md:w-full mt-2 md:mt-0 mx-auto rounded-lg"
+            src="https://dummyimage.com/400x400/000/fff" data-aos="zoom-in"
+            alt="can_help_banner"
+          />
+        </div>
+        <!-- end Image -->
+      </div>
+    </div>
+    
+
+    <!-- Content Section -->
+    <section class="mr-5 md:mr-36 ml-5 md:ml-36 py-8 mt-20">
+      <h2
+        class="text-5xl md:text-7xl font-bold mb-1 text-center text-orange-600 mb-4"
+      >
+        Our Services
+      </h2>
+      <p class="mb-6 text-center text-xl">
+        we eagerly strive to deliver superior mining services
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="bg-white rounded-2xl shadow" data-aos="fade-up">
+          <img
+            src="https://dummyimage.com/600x400/000/fff"
+            class="rounded-2xl"
+            alt=""
+          />
+          <h2 class="text-xl font-bold mb-4 p-6 pb-0">
+            Mining Vertical Shaft Sinking
+          </h2>
+          <p class="text-gray-600 pr-6 pl-6 pb-6">
+            Underground mining and sub-shaft mining excavation.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl shadow" data-aos="fade-up">
+          <img
+            src="https://dummyimage.com/600x400/000/fff"
+            class="rounded-2xl"
+            alt=""
+          />
+          <h2 class="text-xl font-bold mb-4 p-6 pb-0">
+            Incline and Decline Mining
+          </h2>
+          <p class="text-gray-600 pr-6 pl-6 pb-6">
+            Decline or incline means a sloping underground opening for machine.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl shadow" data-aos="fade-up">
+          <img
+            src="https://dummyimage.com/600x400/000/fff"
+            class="rounded-2xl"
+            alt=""
+          />
+          <h2 class="text-xl font-bold mb-4 p-6 pb-0">
+            Tunneling & Refurbishment
+          </h2>
+          <p class="text-gray-600 pr-6 pl-6 pb-6">
+            Selection of tunneling methods and equipment in mine projects.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl shadow" data-aos="fade-up">
+          <img
+            src="https://dummyimage.com/600x400/000/fff"
+            class="rounded-2xl"
+            alt=""
+          />
+          <h2 class="text-xl font-bold mb-4 p-6 pb-0">
+            Exploration & Mineral Extraction
+          </h2>
+          <p class="text-gray-600 pr-6 pl-6 pb-6">
+            Exploration diamond work. Coral drilling. Long hole drilling with
+            boomer machine.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+<section class="mr-5 md:mr-36 ml-5 md:ml-36 py-8 mt-20">
+  <h2 class="text-5xl md:text-7xl font-bold mb-1 text-center text-orange-600 mb-4">
+    Testimonials
+  </h2>
+  <p class="mb-6 text-center text-xl">
+    Hear what our clients have to say about us
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Testimonial 1 -->
+    <div class="bg-white rounded-2xl shadow p-6" data-aos="fade-up">
+      <p class="text-gray-600 mb-4">
+        "DVS Mining provided exceptional service and exceeded our expectations. Their commitment to sustainability and innovation is unmatched."
+      </p>
+      <div class="flex items-center">
+        <img src="https://dummyimage.com/100x100/000/fff" alt="Client 1" class="w-16 h-16 rounded-full mr-4" />
+        <div>
+          <h3 class="text-lg font-bold">John Doe</h3>
+          <p class="text-sm text-gray-500">CEO, Mining Corp.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial 2 -->
+    <div class="bg-white rounded-2xl shadow p-6" data-aos="fade-up">
+      <p class="text-gray-600 mb-4">
+        "Their team is highly professional, and they delivered our project on time with outstanding quality. We couldn't have asked for a better partner."
+      </p>
+      <div class="flex items-center">
+        <img src="https://dummyimage.com/100x100/000/fff" alt="Client 2" class="w-16 h-16 rounded-full mr-4" />
+        <div>
+          <h3 class="text-lg font-bold">Jane Smith</h3>
+          <p class="text-sm text-gray-500">Project Manager, Global Resources</p>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial 3 -->
+    <div class="bg-white rounded-2xl shadow p-6" data-aos="fade-up">
+      <p class="text-gray-600 mb-4">
+        "Working with DVS Mining was a seamless experience. Their innovative approach and attention to detail set them apart in the industry."
+      </p>
+      <div class="flex items-center">
+        <img src="https://dummyimage.com/100x100/000/fff" alt="Client 3" class="w-16 h-16 rounded-full mr-4" />
+        <div>
+          <h3 class="text-lg font-bold">Michael Brown</h3>
+          <p class="text-sm text-gray-500">Director, Earthworks Ltd.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+    
+
+
+    <!-- footer -->
+    <div class="bg-gray-900">
+      <footer
+        class="bg-transparent text-white p-5 md:p-10 py-8 mt-20 mr-5 md:mr-36 ml-5 md:ml-36 py-8 mt-20"
+      >
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full md:w-auto mb-6 text-center md:text-left">
+            <img src="./logo.png" class="h-28 mx-auto md:mx-0" alt="" data-aos="zoom-in"/>
+            <div class="flex justify-center md:justify-start mt-5 space-x-7">
+              <a href="#" class="text-sm text-white hover:text-orange-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-sm text-white hover:text-orange-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-sm text-white hover:text-orange-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-twitter-x"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-sm text-white hover:text-orange-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                  />
+                </svg>
+              </a>
+            </div>
+            
+          </div>
+          <div class="w-full md:w-auto text-center md:text-left mb-6">
+            <h6
+              class="text-2xl font-bold mb-2 text-orange-500"
+              data-aos="zoom-in"
+            >
+            Quick links
+            </h6>
+            <ul class="list-none">
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600"
+                  >Our Team</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600"
+                  >Our Gallery</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600"
+                  >Our Projects</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600"
+                  >Our Blog's</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-auto text-center md:text-left mb-6">
+            <h6
+              class="text-2xl font-bold mb-2 text-orange-500"
+              data-aos="zoom-in"
+            >
+              Terms of Policies
+            </h6>
+            <ul class="list-none">
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600">Cookie Policies</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-auto text-center md:text-left">
+            <h6
+              class="text-2xl font-bold mb-2 text-orange-500"
+              data-aos="zoom-in"
+            >
+              Get in Touch
+            </h6>
+            <ul class="list-none">
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600"
+                  ><b>Email :</b> info@dvsmining.com</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-white hover:text-orange-600"
+                  ><b>Telphone :</b> (0712)-2589851</a
+                ><br>
+                <b>Phone No.:</b> 9503865798</a
+                ><br>
+                <b>Phone No.:</b> 9561453202</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white hover:text-orange-600"
+                  ><b>Address :</b> G-4 Rachana Madhuban, <br />Behind IOCL
+                  Petrol Pump, Koradi Road, <br /> Faras, NAGPUR - 440030 (MH)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start mt-10">
+          <p class="mb-2 text-center md:mb-0">Dvsmining Pvt. Ltd. All Rights Reserved. ©2020-2024.</p>
+          <p>Design & Development by <a href="https://iconicpages.com/" target="_blank"><b>Iconicpages</b></a></p>
+        </div>
+        
+      </footer>
+    </div>
+
+    <!-- jQuery Script -->
+    <script>
+      AOS.init();
+
+      $(document).ready(function () {
+        $("#menu-toggle").click(function () {
+          $("#mobile-menu").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>
